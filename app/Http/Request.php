@@ -50,15 +50,16 @@ class Request
     function send() {
         //var_dump();
         //echo "<p>en el controlador [$this->controller] llamar al metodo [$this->method]</p>";
+        
         $miController = $this->getController();
         $miMethod = $this->getMethod();
-
+        echo "<p>en el controlador [$miController] llamar al metodo [$miMethod]</p>";
         $response = call_user_func([
             new $miController,
             $miMethod
         ]);
 
-        //echo "<p>en el controlador [$miController] llamar al metodo [$miMethod]</p>";
+        
     }
 
 }
