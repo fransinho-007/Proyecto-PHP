@@ -1,0 +1,17 @@
+{
+    "name": "fransinho-007/mi-proyecto2-php",
+    "description": "proyecto sin framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        
+        "authors": [
+            {
+                "name": "Franz Fuentes"
+            }
+        ]
+    },
+    "require": {}
+}
